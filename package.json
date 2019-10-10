@@ -1,0 +1,21 @@
+{
+	"name": "minimum-spanning-tree",
+	"version": "1.0.0",
+	"description": "Demonstração dos algoritmos de PRIM e KRUSKAL",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server/server.js"
+	},
+	"author": "Higor Alves",
+	"license": "MIT",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-uglify": "^3.0.2",
+		"nodemon": "^1.19.3",
+		"pump": "^3.0.0"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"hbs": "^4.0.6"
+	}
+}

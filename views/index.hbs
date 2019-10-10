@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+{{> head}}
+
+<body class="body-main">
+	<div class="title-container">
+		<div class="title">
+			Arvore geradora minima
+		</div>
+		<p>
+			Visualizar <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Algoritimo de Prim</a> e <a
+				href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm">Algoritimo de Kruskal</a> para achar <a
+				href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">a arvore geradora minima</a> de um grafo.
+		</p>
+	</div>
+
+	<div class="details-container">
+		<p>
+			Clique no canvas para gerar os pontos.<br><br>
+			<select id="select-algo" class="select-algo" name="algo">
+				<option value="1">Prim</option>
+				<option value="2">Kruskal</option>
+			</select>
+			<br>
+			<button id="btn-compute" class="btn-main" type="button" name="compute">Calcular</button>
+			<button id="btn-reset" class="btn-main" type="button" name="reset">Resetar</button>
+		</p>
+	</div>
+
+	<canvas id="canvas" class="main-canvas" resize></canvas>
+
+	<script type="text/javascript" src="js-min/constants.js" canvas="canvas"></script>
+	<script type="text/javascript" src="js-min/vertex.js" canvas="canvas"></script>
+	<script type="text/javascript" src="js-min/edge.js" canvas="canvas"></script>
+	<script type="text/javascript" src="js-min/minheap.js" canvas="canvas"></script>
+	<script type="text/javascript" src="js-min/unionfind.js" canvas="canvas"></script>
+	<script type="text/paperscript" src="js-min/script.js" canvas="canvas"></script>
+</body>
+
+</html>
